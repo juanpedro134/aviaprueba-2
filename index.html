@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AviaSouth | Aircraft Management & Solutions</title>
+  <meta name="description" content="AviaSouth delivers solid, smart and innovative aircraft solutions. Technical services, IT products and strategic support for airlines, lessors and investors." />
+  <meta property="og:title" content="AviaSouth | Aircraft Management & Solutions" />
+  <meta property="og:description" content="Solid, smart and innovative aircraft solutions for airlines, lessors and investors." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.aviasouth.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="#home" class="header-logo" aria-label="AviaSouth Home">
+        <img src="assets/logo/logo-dark.png" alt="AviaSouth - Aircraft Management & Solutions" width="180" height="65" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#general" class="nav-link">General</a></li>
+          <li><a href="#services" class="nav-link">Technical Services</a></li>
+          <li><a href="#it-products" class="nav-link">IT Products</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn-nav">Contact Us</a>
+      <button class="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <button class="mobile-nav__close" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="#home" class="mobile-link">Home</a></li>
+      <li><a href="#about" class="mobile-link">About Us</a></li>
+      <li><a href="#general" class="mobile-link">General</a></li>
+      <li><a href="#services" class="mobile-link">Technical Services</a></li>
+      <li><a href="#it-products" class="mobile-link">IT Products</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <section class="hero" id="home" aria-label="AviaSouth hero" style="--hero-image:url('assets/images/hero-runway.jpg')">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="hero-path" aria-hidden="true">
+        <svg viewBox="0 0 900 520" role="presentation" focusable="false">
+          <path class="path-main" d="M30 390 C180 260 260 460 420 310 C565 170 660 260 850 90" />
+          <path class="path-secondary" d="M90 130 C245 235 350 120 510 210 C650 290 700 210 820 285" />
+          <circle class="path-dot d1" cx="420" cy="310" r="5" />
+          <circle class="path-dot d2" cx="850" cy="90" r="5" />
+          <circle class="path-dot d3" cx="90" cy="130" r="4" />
+        </svg>
+      </div>
+      <div class="hero-radar" aria-hidden="true">
+        <div class="radar-ring r1"></div>
+        <div class="radar-ring r2"></div>
+        <div class="radar-ring r3"></div>
+        <div class="radar-sweep"></div>
+        <div class="radar-cross-h"></div>
+        <div class="radar-cross-v"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal-up"><span class="eyebrow-dot"></span>Aircraft Management & Solutions</div>
+        <h1 class="hero-title reveal-up" style="--delay:0.1s">Solid, Smart<br><span class="title-accent">&amp; Innovative</span></h1>
+        <p class="hero-subtitle reveal-up" style="--delay:0.2s">Technical representation, maintenance oversight and digital aircraft solutions for airlines, lessors and investors.</p>
+        <div class="hero-cta reveal-up" style="--delay:0.3s">
+          <a href="#services" class="btn btn-primary">Explore Services</a>
+          <a href="#it-products" class="btn btn-outline">View IT Products</a>
+        </div>
+        <div class="hero-stats reveal-up" style="--delay:0.4s" aria-label="AviaSouth service highlights">
+          <div><strong>LATAM</strong><span>Market support</span></div>
+          <div><strong>24h</strong><span>Response focus</span></div>
+          <div><strong>360</strong><span>Aircraft lifecycle</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-visual" aria-hidden="true">
+        <div class="aircraft-card js-parallax" data-parallax data-speed="26">
+          <div class="aircraft-card__image"></div>
+          <div class="aircraft-card__scan"></div>
+          <div class="aircraft-card__label">ILS APPROACH / TECHNICAL CONTROL</div>
+        </div>
+      </div>
+      <div class="hud-target" aria-hidden="true">
+        <div class="hud-target-corner tl"></div>
+        <div class="hud-target-corner tr"></div>
+        <div class="hud-target-corner bl"></div>
+        <div class="hud-target-corner br"></div>
+        <span class="hud-label">B737 &middot; ALT 3,000ft &middot; FINAL</span>
+      </div>
+      <div class="scroll-indicator" aria-label="Scroll to explore">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <section class="section section-about" id="about" aria-labelledby="about-heading">
+      <div class="container split-section">
+        <div class="section-copy">
+          <div class="section-label reveal-up">Who We Are</div>
+          <h2 class="section-title reveal-up" id="about-heading">About <span class="accent">AviaSouth</span></h2>
+          <p class="section-intro reveal-up">We are a team committed to delivering solid and smart solutions in the aviation environment. Relying on experience, innovative techniques and modern working practices, we provide clients with value-added services and measurable operational benefit.</p>
+          <div class="about-cards compact-grid">
+            <article class="about-card reveal-up" style="--delay:0s">
+              <div class="about-card__icon icon-clock"></div>
+              <h3>Experience</h3>
+              <p>Field knowledge across aircraft transitions, maintenance events and technical audits.</p>
+            </article>
+            <article class="about-card reveal-up" style="--delay:0.08s">
+              <div class="about-card__icon icon-delta"></div>
+              <h3>Innovation</h3>
+              <p>Modern practices and digital tools built around real maintenance operations.</p>
+            </article>
+            <article class="about-card reveal-up" style="--delay:0.16s">
+              <div class="about-card__icon icon-check"></div>
+              <h3>Reliability</h3>
+              <p>Rigorous inspections, airworthiness analysis and documentation control.</p>
+            </article>
+            <article class="about-card reveal-up" style="--delay:0.24s">
+              <div class="about-card__icon icon-network"></div>
+              <h3>Strategic Support</h3>
+              <p>Assistance for airlines, lessors and investors across the Latin American market.</p>
+            </article>
+          </div>
+        </div>
+        <aside class="media-panel about-visual reveal-right js-parallax" style="--media:url('assets/images/cabin-window.jpg')" data-parallax data-speed="18" aria-label="Aircraft window view">
+          <div class="media-panel__overlay"></div>
+          <div class="media-panel__content">
+            <span>Operational Perspective</span>
+            <strong>Technical clarity from inspection to delivery.</strong>
+          </div>
+          <div class="media-metrics">
+            <div><span>Records</span><strong>Reviewed</strong></div>
+            <div><span>Assets</span><strong>Protected</strong></div>
+            <div><span>Teams</span><strong>Aligned</strong></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-general" id="general" aria-labelledby="general-heading">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <div class="section-label reveal-up">Scope of Services</div>
+            <h2 class="section-title reveal-up" id="general-heading">General <span class="accent">Capabilities</span></h2>
+          </div>
+          <p class="section-intro reveal-up">Specialized in technical representation and strategic assistance, AviaSouth covers the full aircraft operation cycle with multilingual teams focused on the Latin American market.</p>
+        </div>
+        <div class="general-stage reveal-up">
+          <div class="general-map" style="--media:url('assets/images/digital-flight.avif')" aria-hidden="true">
+            <div class="map-orbit o1"></div>
+            <div class="map-orbit o2"></div>
+            <div class="map-pin p1"></div>
+            <div class="map-pin p2"></div>
+            <div class="map-pin p3"></div>
+          </div>
+          <div class="general-grid">
+            <article class="general-item reveal-up" style="--delay:0s">
+              <div class="general-item__num">01</div>
+              <div class="general-item__body"><h3>Technical Representation</h3><p>Expert representation for purchase, lease, transition and delivery decisions.</p></div>
+            </article>
+            <article class="general-item reveal-up" style="--delay:0.06s">
+              <div class="general-item__num">02</div>
+              <div class="general-item__body"><h3>Pre-Lease / Purchase Assessment</h3><p>Aircraft and engine surveys with records review and final technical opinion.</p></div>
+            </article>
+            <article class="general-item reveal-up" style="--delay:0.12s">
+              <div class="general-item__num">03</div>
+              <div class="general-item__body"><h3>Mid-Term In-Service Audits</h3><p>Evidence-based audits to understand asset condition during active operations.</p></div>
+            </article>
+            <article class="general-item reveal-up" style="--delay:0.18s">
+              <div class="general-item__num">04</div>
+              <div class="general-item__body"><h3>Aircraft Delivery &amp; Re-Delivery</h3><p>Planning and compliance support to reduce disputes, delays and uncertainty.</p></div>
+            </article>
+            <article class="general-item reveal-up" style="--delay:0.24s">
+              <div class="general-item__num">05</div>
+              <div class="general-item__body"><h3>Major Maintenance Oversight</h3><p>On-site representation during heavy checks, cost control and provider coordination.</p></div>
+            </article>
+            <article class="general-item reveal-up" style="--delay:0.3s">
+              <div class="general-item__num">06</div>
+              <div class="general-item__body"><h3>Latin American Market Support</h3><p>Multilingual communication between clients, operators, providers and authorities.</p></div>
+            </article>
+          </div>
+        </div>
+        <div class="general-tagline reveal-up"><span>In business, communication is a key factor for project success.</span></div>
+      </div>
+    </section>
+
+    <section class="section section-services" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="services-lead">
+          <div class="services-copy">
+            <div class="section-label reveal-up">Quality Assurance</div>
+            <h2 class="section-title reveal-up" id="services-heading">Technical <span class="accent">Services</span></h2>
+            <p class="section-intro reveal-up">Obtain exact data of your aircraft. AviaSouth provides inspections, airworthiness analysis and comprehensive documentation review, giving clients a precise picture before reception, delivery or lease decisions.</p>
+          </div>
+          <aside class="service-snapshot reveal-right" style="--media:url('assets/images/cabin-window.jpg')" aria-label="Technical service snapshot">
+            <span>Inspection workflow</span>
+            <strong>Records, hardware and compliance aligned before action.</strong>
+          </aside>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal-up" style="--delay:0s" tabindex="0">
+            <div class="service-card__icon icon-radar"></div><div class="service-card__tag">Assessment</div><h3>Pre-Lease / Purchase Assessment</h3>
+            <p class="service-card__short">Complete aircraft and engine survey with records review, status report and final technical opinion.</p>
+            <div class="service-card__detail"><p>This assessment combines physical inspection and records review, enabling clients to take solid, founded decisions at pre-lease or purchase stage.</p></div>
+            <button class="service-card__toggle" aria-expanded="false">Read more <span aria-hidden="true">&darr;</span></button>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.06s" tabindex="0">
+            <div class="service-card__icon icon-doc"></div><div class="service-card__tag">Delivery</div><h3>Pre-Delivery / Re-Delivery Inspections</h3>
+            <p class="service-card__short">Thorough review of records and hardware before lease expiry, compared against redelivery conditions.</p>
+            <div class="service-card__detail"><p>We review contractual requirements, maintenance status and documentation to support an efficient and well-controlled handover.</p></div>
+            <button class="service-card__toggle" aria-expanded="false">Read more <span aria-hidden="true">&darr;</span></button>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.12s" tabindex="0">
+            <div class="service-card__icon icon-audit"></div><div class="service-card__tag">Audit</div><h3>Mid Term / In Service Audits</h3>
+            <p class="service-card__short">Physical and records review to verify lease obligation compliance and identify deficiencies.</p>
+            <div class="service-card__detail"><p>Operator technical audits provide precise evidence for decision-making, covering maintenance standards, performance and potential issues.</p></div>
+            <button class="service-card__toggle" aria-expanded="false">Read more <span aria-hidden="true">&darr;</span></button>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.18s" tabindex="0">
+            <div class="service-card__icon icon-transition"></div><div class="service-card__tag">Transition</div><h3>Aircraft Delivery and Re-Delivery</h3>
+            <p class="service-card__short">Management of the delivery or re-delivery process with advance planning and contractual control.</p>
+            <div class="service-card__detail"><p>We assure that contractual rights and obligations are met, conduct pre-delivery audits and keep clients informed to reduce delays.</p></div>
+            <button class="service-card__toggle" aria-expanded="false">Read more <span aria-hidden="true">&darr;</span></button>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.24s" tabindex="0">
+            <div class="service-card__icon icon-oversight"></div><div class="service-card__tag">Oversight</div><h3>On-Site Major Maintenance Oversight</h3>
+            <p class="service-card__short">Experienced representatives monitor heavy maintenance, costs, regulatory compliance and provider coordination.</p>
+            <div class="service-card__detail"><p>Our representatives provide project management, technical know-how and cost awareness to protect asset value.</p></div>
+            <button class="service-card__toggle" aria-expanded="false">Read more <span aria-hidden="true">&darr;</span></button>
+          </article>
+          <article class="service-card reveal-up" style="--delay:0.3s" tabindex="0">
+            <div class="service-card__icon icon-digital"></div><div class="service-card__tag">Digital</div><h3>Records Digitizing Service</h3>
+            <p class="service-card__short">Selection, preparation, classification, scanning and cloud storage of aircraft technical records.</p>
+            <div class="service-card__detail"><p>Digitized records are organized through a systematic approach and saved to secure cloud servers for convenient access.</p></div>
+            <button class="service-card__toggle" aria-expanded="false">Read more <span aria-hidden="true">&darr;</span></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-it" id="it-products" aria-labelledby="it-heading">
+      <div class="container">
+        <div class="section-head-row">
+          <div>
+            <div class="section-label reveal-up">AviaSouth IT Branch</div>
+            <h2 class="section-title reveal-up" id="it-heading">IT <span class="accent">Products</span></h2>
+          </div>
+          <p class="section-intro reveal-up">NewMia becomes the digital layer for maintenance organizations, connecting engineering, planning, technical records, logistics, publications and reliability in one web-based platform.</p>
+        </div>
+        <div class="newmia-hero reveal-up">
+          <div class="newmia-copy">
+            <div class="newmia-badge-row">
+              <span class="newmia-badge">100% Web Based</span>
+              <span class="newmia-badge">More Efficient</span>
+              <span class="newmia-badge">Cost Reduction</span>
+            </div>
+            <h3 class="newmia-title">Integrated Maintenance<br><span>Software Solution</span></h3>
+            <p class="newmia-desc">Developed by people with extensive field experience in aircraft maintenance, <strong>NewMia</strong> is AviaSouth's own integrated maintenance management platform, hosted on dedicated cloud servers and accessible from any browser.</p>
+            <p class="newmia-desc">It centralizes engineering, planning, technical records, logistics, publications and reliability functions within a single, unified operational environment.</p>
+          </div>
+          <div class="newmia-visual" style="--media:url('assets/images/ai-maintenance.jpeg')" aria-hidden="true">
+            <div class="dashboard-shell">
+              <div class="dashboard-top"><span></span><span></span><span></span></div>
+              <div class="dashboard-grid">
+                <div class="dash-tile wide"><strong>Fleet Status</strong><span>93%</span></div>
+                <div class="dash-tile"><strong>WO</strong><span>42</span></div>
+                <div class="dash-tile"><strong>Records</strong><span>Live</span></div>
+                <div class="dash-chart"><i style="height:40%"></i><i style="height:72%"></i><i style="height:55%"></i><i style="height:88%"></i><i style="height:62%"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modules-grid reveal-up">
+          <div class="module-card"><div class="module-card__head"><span class="module-icon"></span><span>Master Configuration</span></div><ul><li>Basic Data &amp; Parameters</li><li>Aircraft Set Up</li><li>Suppliers Database</li><li>Human Resources</li><li>Software Tools</li></ul></div>
+          <div class="module-card"><div class="module-card__head"><span class="module-icon"></span><span>Engineering</span></div><ul><li>Maintenance Programs</li><li>Part Masters</li><li>Document Masters</li><li>Structural Repairs</li><li>Mappings</li></ul></div>
+          <div class="module-card"><div class="module-card__head"><span class="module-icon"></span><span>Planning</span></div><ul><li>Work Orders Generator</li><li>Forecasting</li><li>Planning Tools</li></ul></div>
+          <div class="module-card"><div class="module-card__head"><span class="module-icon"></span><span>Materials Management</span></div><ul><li>Requisitions &amp; RFQs</li><li>Purchase Orders</li><li>Shipping &amp; Receiving</li><li>Quality Control</li><li>Inventory &amp; Financial</li></ul></div>
+          <div class="module-card"><div class="module-card__head"><span class="module-icon"></span><span>Technical Records</span></div><ul><li>Flight &amp; Maintenance Activity</li><li>Component Updates</li><li>Digitalized Libraries</li><li>Redelivery Module</li><li>Publications Management</li></ul></div>
+          <div class="module-card"><div class="module-card__head"><span class="module-icon"></span><span>Reliability</span></div><ul><li>Aircraft Monitoring</li><li>Engine Monitoring</li></ul></div>
+          <div class="module-card"><div class="module-card__head"><span class="module-icon"></span><span>System Administration</span></div><ul><li>User &amp; Security Setup</li><li>Reports</li><li>Menus Administration</li><li>Files Administration</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact" aria-labelledby="contact-heading">
+      <div class="contact-grid-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-label reveal-up">Get In Touch</div>
+        <h2 class="section-title reveal-up" id="contact-heading">Contact <span class="accent">Us</span></h2>
+        <p class="section-intro reveal-up">If you have any questions, please call or email us. We value our clients and will make every attempt to respond within 24 hours.</p>
+        <div class="contact-card reveal-up">
+          <div class="contact-info">
+            <div class="contact-info__item"><svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M4 8l8 6 8-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><div><div class="contact-info__label">Email</div><a href="mailto:info@aviasouth.com" class="contact-info__value">info@aviasouth.com</a></div></div>
+            <div class="contact-info__item"><svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 4h3l1.4 4-2 1.2c.9 1.9 2.5 3.5 4.4 4.4l1.2-2 4 1.4v3a3 3 0 0 1-3.3 3A14.8 14.8 0 0 1 4 7.3 3 3 0 0 1 7 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="contact-info__label">Argentina</div><a href="tel:+5491169568033" class="contact-info__value">(+54) 911 6956 8033</a></div></div>
+            <div class="contact-info__item"><svg class="contact-info__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 4h3l1.4 4-2 1.2c.9 1.9 2.5 3.5 4.4 4.4l1.2-2 4 1.4v3a3 3 0 0 1-3.3 3A14.8 14.8 0 0 1 4 7.3 3 3 0 0 1 7 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><div class="contact-info__label">United States</div><a href="tel:+19543389549" class="contact-info__value">(+1) 954 338 9549</a></div></div>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:info@aviasouth.com" class="btn btn-primary contact-btn">Send Email</a>
+            <a href="https://wa.me/5491169568033" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp contact-btn">WhatsApp</a>
+            <a href="tel:+5491169568033" class="btn btn-outline contact-btn">Call Argentina</a>
+            <a href="tel:+19543389549" class="btn btn-outline contact-btn">Call USA</a>
+          </div>
+        </div>
+        <p class="contact-tagline reveal-up">Aircraft Management Solutions.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand"><img src="assets/logo/logo-dark.png" alt="AviaSouth" width="140" height="50" /><p>Aircraft Management Solutions.</p></div>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="#home">Home</a><a href="#about">About Us</a><a href="#general">General</a><a href="#services">Technical Services</a><a href="#it-products">IT Products</a><a href="#contact">Contact</a></nav>
+        <div class="footer-contact"><a href="mailto:info@aviasouth.com">info@aviasouth.com</a><a href="tel:+5491169568033">ARG: (+54) 911 6956 8033</a><a href="tel:+19543389549">USA: (+1) 954 338 9549</a></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2026 AviaSouth. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5491169568033" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Contact via WhatsApp">WA</a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
