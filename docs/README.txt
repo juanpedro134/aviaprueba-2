@@ -7,8 +7,11 @@ Structure:
 - css/styles.css
 - js/main.js
 - assets/logo/*
+- assets/media/about-aircraft.png
+- assets/media/newmia-logo.png
 
 Notes:
-- The site uses only the AviaSouth logo images.
-- Former background photos were replaced with HTML/CSS technical visuals so GitHub Pages does not depend on photo assets.
+- The AviaSouth logos are preserved.
+- The About section uses a web-optimized PNG aircraft visual.
+- The IT Products section includes the NewMia logo asset.
 - Publish from main branch and /docs folder.
