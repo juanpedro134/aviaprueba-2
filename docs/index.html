@@ -53,6 +53,7 @@
     <section class="hero" id="home" aria-label="AviaSouth hero">
       <canvas id="hero-canvas" aria-hidden="true"></canvas>
       <div class="hero-grid-overlay" aria-hidden="true"></div>
+      <div class="hero-flyby" aria-hidden="true"><span class="hero-flyby__trail"></span><span class="hero-flyby__plane"></span></div>
       <div class="hero-path" aria-hidden="true">
         <svg viewBox="0 0 900 520" role="presentation" focusable="false">
           <path class="path-main" d="M30 390 C180 260 260 460 420 310 C565 170 660 260 850 90" />
@@ -79,9 +80,9 @@
           <a href="#it-products" class="btn btn-outline">View IT Products</a>
         </div>
         <div class="hero-stats reveal-up" style="--delay:0.4s" aria-label="AviaSouth service highlights">
-          <div><strong>LATAM</strong><span>Market support</span></div>
-          <div><strong>24h</strong><span>Response focus</span></div>
-          <div><strong>360</strong><span>Aircraft lifecycle</span></div>
+          <div><strong>Oversight</strong><span>Technical control</span></div>
+          <div><strong>Lifecycle</strong><span>Asset support</span></div>
+          <div><strong>Digital</strong><span>Smart tools</span></div>
         </div>
       </div>
       <div class="hero-visual" id="hero-visual" aria-hidden="true">
@@ -127,52 +128,45 @@
           <p class="section-intro reveal-up">We are a team committed to delivering solid and smart solutions in the aviation environment. Relying on experience, innovative techniques and modern working practices, we provide clients with value-added services and measurable operational benefit.</p>
           <div class="about-cards compact-grid">
             <article class="about-card reveal-up" style="--delay:0s">
-              <div class="about-card__icon icon-clock"></div>
+              <div class="about-card__icon icon-experience" aria-hidden="true"></div>
               <h3>Experience</h3>
               <p>Field knowledge across aircraft transitions, maintenance events and technical audits.</p>
             </article>
             <article class="about-card reveal-up" style="--delay:0.08s">
-              <div class="about-card__icon icon-delta"></div>
+              <div class="about-card__icon icon-innovation" aria-hidden="true"></div>
               <h3>Innovation</h3>
               <p>Modern practices and digital tools built around real maintenance operations.</p>
             </article>
             <article class="about-card reveal-up" style="--delay:0.16s">
-              <div class="about-card__icon icon-check"></div>
+              <div class="about-card__icon icon-reliability" aria-hidden="true"></div>
               <h3>Reliability</h3>
               <p>Rigorous inspections, airworthiness analysis and documentation control.</p>
             </article>
             <article class="about-card reveal-up" style="--delay:0.24s">
-              <div class="about-card__icon icon-network"></div>
+              <div class="about-card__icon icon-strategy" aria-hidden="true"></div>
               <h3>Strategic Support</h3>
               <p>Assistance for airlines, lessors and investors across the Latin American market.</p>
             </article>
           </div>
         </div>
-        <aside class="media-panel about-visual reveal-right js-parallax" data-parallax data-speed="18" aria-label="Operational dashboard visual">
+        <aside class="media-panel about-visual reveal-right js-parallax" data-parallax data-speed="18" aria-label="Aircraft inspection flow visual">
           <div class="media-panel__overlay"></div>
           <div class="ops-board" aria-hidden="true">
-            <div class="ops-board__top">
-              <span></span><span></span><span></span>
-            </div>
+            <div class="ops-board__top"><span></span><span></span><span></span></div>
             <div class="ops-board__aircraft">
-              <span class="ops-plane"></span>
               <span class="ops-route r-a"></span>
               <span class="ops-route r-b"></span>
+              <span class="ops-plane"></span>
             </div>
-            <div class="ops-checklist">
-              <div><span></span> Records status</div>
-              <div><span></span> AD/SB traceability</div>
-              <div><span></span> Asset condition</div>
-            </div>
+          </div>
+          <div class="about-flow" aria-hidden="true">
+            <div><span>01</span><strong>Inspect</strong></div>
+            <div><span>02</span><strong>Review</strong></div>
+            <div><span>03</span><strong>Deliver</strong></div>
           </div>
           <div class="media-panel__content">
             <span>Operational Perspective</span>
-            <strong>Technical clarity from inspection to delivery.</strong>
-          </div>
-          <div class="media-metrics">
-            <div><span>Records</span><strong>Reviewed</strong></div>
-            <div><span>Assets</span><strong>Protected</strong></div>
-            <div><span>Teams</span><strong>Aligned</strong></div>
+            <strong>Inspect. Review. Deliver.</strong>
           </div>
         </aside>
       </div>
@@ -240,15 +234,18 @@
             <h2 class="section-title reveal-up" id="services-heading">Technical <span class="accent">Services</span></h2>
             <p class="section-intro reveal-up">Obtain exact data of your aircraft. AviaSouth provides inspections, airworthiness analysis and comprehensive documentation review, giving clients a precise picture before reception, delivery or lease decisions.</p>
           </div>
-          <aside class="service-snapshot reveal-right" aria-label="Technical service snapshot">
-            <div class="inspection-panel" aria-hidden="true">
-              <div class="inspection-panel__row"><i></i><b></b><em></em></div>
-              <div class="inspection-panel__row"><i></i><b></b><em></em></div>
-              <div class="inspection-panel__row"><i></i><b></b><em></em></div>
-              <div class="inspection-panel__gauge"><span></span></div>
+          <aside class="service-snapshot reveal-right" aria-label="Technical service workflow">
+            <div class="workflow-panel" aria-hidden="true">
+              <div class="workflow-step"><span>01</span><strong>Records Review</strong></div>
+              <div class="workflow-line"></div>
+              <div class="workflow-step"><span>02</span><strong>Physical Inspection</strong></div>
+              <div class="workflow-line"></div>
+              <div class="workflow-step"><span>03</span><strong>Compliance Report</strong></div>
             </div>
-            <span>Inspection workflow</span>
-            <strong>Records, hardware and compliance aligned before action.</strong>
+            <div class="service-snapshot__copy">
+              <span>Inspection workflow</span>
+              <strong>Clear steps before every technical decision.</strong>
+            </div>
           </aside>
         </div>
         <div class="services-grid">
